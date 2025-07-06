@@ -30,8 +30,8 @@ function App() {
 
   return (
     <div className="main bg-gradient-to-l to-purple-700 from-black w-screen h-screen">
-      <div className="container w-[80%] mx-auto h-full">
-        <div className="child flex items-center justify-between h-full flex-wrap-reverse md:flex-nowrap">
+      <div className="container w-[90%] sm:w-[80%] mx-auto h-full overflow-hidden">
+        <div className="child flex items-center justify-between h-full flex-wrap-reverse md:flex-nowrap overflow-hidden">
           <div className="text w-full lg:w-[48%] mb-8 lg:mb-0 text-center md:text-left">
             <h1 className='text-5xl text-white mb-2 font-bold'>CURRENCY CONVERTER</h1>
             <p className='font-bold text-purple-300'>Convert Any Currency Into Other With Live Market Rate</p>
@@ -48,7 +48,7 @@ function App() {
           </div>
 
           <div className="app w-full md:w-[50%] mt-10 md:mt-0">
-            <div className="main-box p-5 rounded-xl border-white shadow-purple-800 shadow-2xl border-2 flex flex-wrap gap-7 relative bg-white/10 backdrop-blur">
+            <div className="main-box px-2 py-3 sm:p-5 rounded-xl border-white shadow-purple-800 shadow-2xl border-2 flex flex-wrap gap-7 relative bg-white/10 backdrop-blur">
               <InputBox
                 label="From"
                 amount={amount}

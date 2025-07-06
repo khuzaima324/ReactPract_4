@@ -14,10 +14,10 @@ function InputBox({
 }) {
     const amountInputId = useId()
     return (
-        <div className="from flex justify-between border-1 border-black px-4 py-3 rounded-l bg-purple-800 text-white w-full">
-            <div className="fromInput">
+        <div className="from flex justify-between border-1 border-black px-4 py-3 rounded-l bg-purple-800 text-white w-full overflow-hidden">
+            <div className="fromInput sm:w-auto w-[69%]">
                 <label htmlFor={amountInputId} className='block text-xs'>{label}</label>
-                <input type="number" id={amountInputId} disabled={amountDisable} value={amount} onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))} placeholder='Enter Your Amount' className='outline-0 min-w-5' />
+                <input type="number" id={amountInputId} disabled={amountDisable} value={amount} onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))} placeholder='Enter Your Amount' className='outline-0 min-w-5 w-full' />
             </div>
             <select
                 id="option"
